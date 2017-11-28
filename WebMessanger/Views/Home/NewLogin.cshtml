@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewBag.Title = "NewLogin";
+}
+
+<h2>Nowy login</h2>
+@using (Html.BeginForm())
+{
+<div class="row">
+    <div>
+        Login: <input type="text" name="Uzytkownik" />
+    </div>
+    <div>
+        Hasło: <input type="password" name="Haslo" />
+    </div>
+    <div>
+        Powtorz hasło: <input type="password" name="Haslo2" />
+    </div>
+    <div>
+        <input type="submit" />
+    </div>
+    <p style="color: red;">@ViewBag.Blad</p>
+</div>
+}
